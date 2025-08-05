@@ -10,7 +10,8 @@ import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, Di
 import { Plus, Edit, Trash2, Loader2, RefreshCw } from 'lucide-react';
 import { Pessoa } from '../types';
 import { useApi } from '../hooks/useApi';
-import { toast } from 'sonner@2.0.3';
+import { toast } from "sonner"; // ✅ CERTO
+
 
 export const GestaoPessoas: React.FC = () => {
   const api = useApi();

@@ -12,7 +12,7 @@ import { tiposOcorrencia, pessoasCadastradas } from '../data/mockData';
 import { Pessoa } from '../types';
 import { useAuth } from '../contexts/AuthContext';
 import { useApi } from '../hooks/useApi';
-import { toast } from 'sonner@2.0.3';
+import { toast } from "sonner"; // ✅ CERTO
 
 export const NovaOcorrencia: React.FC = () => {
   const { user } = useAuth();

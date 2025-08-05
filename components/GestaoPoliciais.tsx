@@ -10,7 +10,8 @@ import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, Di
 import { Plus, Edit, Trash2, Shield } from 'lucide-react';
 import { policiaisRegistrados, postosPolicia } from '../data/mockData';
 import { Policial } from '../types';
-import { toast } from 'sonner@2.0.3';
+import { toast } from "sonner"; // ✅ CERTO
+
 
 export const GestaoPoliciais: React.FC = () => {
   const [policiais, setPoliciais] = useState<Policial[]>(policiaisRegistrados);
